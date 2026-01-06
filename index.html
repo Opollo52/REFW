@@ -14,34 +14,8 @@
     <title>Développeur Freelance Caen | Expert Web & Applications Mobile en Normandie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="canonical" href="https://votresite.com">
-    
-    <!-- Schema.org markup pour le SEO local -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Développeur Freelance Caen",
-        "image": "",
-        "description": "Développeur freelance spécialisé en développement web et mobile à Caen, Normandie",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Caen",
-            "addressRegion": "Normandie",
-            "addressCountry": "FR"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.1829,
-            "longitude": -0.3707
-        },
-        "priceRange": "$$",
-        "telephone": "+33-XXX-XXX-XXX",
-        "url": "https://votresite.com"
-    }
-    </script>
 </head>
 <body>
-    <!-- Header -->
     <header id="header">
         <nav class="container">
             <div class="logo">
@@ -62,7 +36,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="accueil" class="hero">
         <div class="hero-content container">
             <h1>Développeur Freelance à Caen</h1>
@@ -89,7 +62,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
@@ -167,7 +139,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
@@ -221,7 +192,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section id="blog" class="blog">
         <div class="container">
             <div class="section-header">
@@ -266,7 +236,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
@@ -315,7 +284,6 @@
         </div>
     </section>
 
-    <!-- Location Section -->
     <section id="location" class="location">
         <div class="container">
             <div class="section-header">
@@ -344,7 +312,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -425,7 +392,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -466,7 +432,6 @@
     </footer>
 
     <script>
-        // Menu burger responsive
         const burger = document.querySelector('.burger');
         const navMenu = document.querySelector('.nav-menu');
         
@@ -475,7 +440,6 @@
             burger.classList.toggle('active');
         });
 
-        // Fermer le menu au clic sur un lien
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -483,7 +447,6 @@
             });
         });
 
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -497,7 +460,6 @@
             });
         });
 
-        // Header au scroll
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
             if (window.scrollY > 100) {
@@ -507,7 +469,6 @@
             }
         });
 
-        // Formulaire de contact
         const contactForm = document.querySelector('.contact-form');
         if (contactForm) {
             contactForm.addEventListener('submit', (e) => {
@@ -517,7 +478,6 @@
             });
         }
 
-        // Animation au scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
